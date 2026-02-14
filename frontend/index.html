@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Full-Stack Review Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>⭐ Review Portal</h1>
+    <p>Share your experience</p>
+  </header>
+
+  <main class="container">
+
+    
+    <!-- Review Form -->
+    <section class="form-card">
+      <h2>Write a Review</h2>
+
+      <input type="text" id="name" placeholder="Your Name" />
+
+     <div class="stars">
+  <span data-value="1">★</span>
+  <span data-value="2">★</span>
+  <span data-value="3">★</span>
+  <span data-value="4">★</span>
+  <span data-value="5">★</span>
+</div>
+
+
+      <textarea id="comment" placeholder="Your review..."></textarea>
+
+      <button onclick="addReview()">Submit Review</button>
+    </section>
+
+    <!-- Reviews -->
+    <section>
+      <h2 class="section-title">Student Reviews</h2>
+      <div id="reviews" class="reviews-grid"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Review Website | College Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <div id="thankYouPage" class="thankyou-page">
+  <div class="thankyou-card">
+    <div class="checkmark">✓</div>
+    <h2>Thank You!</h2>
+    <p>Your review has been submitted successfully.</p>
+    <span class="subtext">We appreciate your feedback.</span>
+  </div>
+</div>
+
+</body>
+</html>
